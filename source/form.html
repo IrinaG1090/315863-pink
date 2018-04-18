@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__index">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Приложение «PINK»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </nav>
+      </div> 
+      <div class="page-header__wrapper">
+        <section class="intro">
+          <h1 class="intro__header intro__header--photo">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </section>
+      </div> 
+    </header>
+    <main class="page-main">
+      <section class="contest-feedback">
+        <form class="contest-feedback__form" action="echo" method="POST">
+          <p class="contest-feedback__share">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <fieldset class="contest-feedback__field contest-feedback__field--info">
+            <ul class="contest-feedback__list">
+              <li class="contest-feedback__item">
+                <label class="label label--caption" for="surname">Фамилия:</label>
+                <input class="text" type="text" name="surname" placeholder="Укажите фамилию *" required>
+              </li>
+              <li class="contest-feedback__item">
+                <label class="label label--caption" for="name">Имя:</label>
+                <input class="text" type="text" name="name" placeholder="Введите ваше имя *" required>
+              </li>
+              <li class="contest-feedback__item">
+                <label class="label label--caption" for="middle-name">Отчество:</label>
+                <input class="text" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <div class="contest-feedback__wrapper-color">
+            <fieldset class="contest-feedback__field">
+              <legend class="contest-feedback__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="contest-feedback__list">
+                <li class="contest-feedback__item">
+                  <input class="checkbox" type="checkbox" name="selfi" checked>
+                  <label class="label label--checkbox" for="selfi">Сделал селфи с акулой</label>
+                </li>
+                <li class="contest-feedback__item">
+                  <input class="checkbox" type="checkbox" name="beach" checked>
+                  <label class="label label--checkbox" for="beach">Обгорел на пляже</label>
+                </li>
+                <li class="contest-feedback__item">
+                  <input class="checkbox" type="checkbox" name="norris">
+                  <label class="label label--checkbox" for="norris">Видел Чака Норриса</label>
+                </li>
+                <li class="contest-feedback__item">
+                  <input class="checkbox" type="checkbox" name="souvenir">
+                  <label class="label label--checkbox" for="souvenir">Накупил сувениров</label>
+                </li>
+                <li class="contest-feedback__item">
+                  <input class="checkbox" type="checkbox" name="tower" checked>
+                  <label class="label label--checkbox" for="tower">Удержал башню</label>
+                </li>
+                <li class="contest-feedback__item">
+                  <input class="checkbox" type="checkbox" name="hotel">
+                  <label class="label label--checkbox" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="contest-feedback__field">
+            <ul class="contest-feedback__list">
+              <li class="contest-feedback__item">
+                <label class="label label--caption" for="phone-number">Номер телефона</label>
+                <input class="tel" name="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="contest-feedback__item">
+                <label class="label label--caption" for="email">Адрес почты</label>
+                <input class="email" type="email" name="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="contest-feedback__wrapper-color">
+            <fieldset class="contest-feedback__field">
+              <legend class="contest-feedback__title">С каким приложением путешествовали?</legend>
+              <ul class="contest-feedback__list">
+                <li class="contest-feedback__item">
+                  <input class="radio" type="radio" name="trip-app" value="ios" checked>
+                  <label class="label label--radio" for="ios">Pink для iOS</label>
+                </li>
+                <li class="contest-feedback__item">
+                  <input class="radio" type="radio" name="trip-app" value="android">
+                  <label class="label label--radio" for="android">Pink на Android</label>
+                </li>
+                <li class="contest-feedback__item">
+                  <input class="radio" type="radio" name="trip-app" value="win-phone">
+                  <label class="label label--radio" for="win-phone">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="contest-feedback__field">
+            <legend class="contest-feedback__title">Опишите свои эмоции</legend>
+            <textarea class="textarea-text" name="feedback-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <div class="contest-feedback__wrapper-inner">
+            <input class="contest-feedback__submit" type="submit" value="Отправить форму">
+            <p class="contest-feedback__require">* - обязательные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__copyright">
+        <a class="logo-copyright" href="index.html">
+          <img class="logo-mobile" src="http://placehold.it/150x100" width="147" height="40">
+        </a>
+        <div class="social-links">
+          <a class="social-links social-link--twitter" href="#">Tвиттер</a>
+          <a class="social-links social-link--facebook" href="#">Фейсбук</a> 
+          <a class="social-links social-link--youtube" href="#">Ютуб</a>
+        </div>
+        <div class="page-footer__developer">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано
+            <img class="logo-htmlacademy" src="http://placehold.it/150x100" width="27" height="34">
+          </a>
+        </div>
+      </section>
+    </footer>
+
+  </body>
+</html>  
