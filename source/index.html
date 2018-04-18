@@ -6,7 +6,134 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <header class="page-header">
+      <div class="page-header__index">
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Приложение «PINK»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </nav>
+      </div>
+      <div class="page-header__wrapper">
+        <p class="page-header__picture iphone">
+          <img class="page-header__picture-phone" src="http://placehold.it/150x100" width="498" height="314" alt="Приложение «PINK»">
+        </p>
+      </div>
+      <section class="page-header__icon">
+        <a class="page-header__download" href="#">Скачать приложение</a>
+        <a class="logo-apple" href="#">
+          <img class="apple" src="http://placehold.it/150x100" width="47" height="56" alt="Iphone">
+        </a>
+        <a class="logo-android" href="#">
+          <img class="android" src="http://placehold.it/150x100" width="43" height="47" alt="Android">
+        </a>
+        <a class="logo-microsoft" href="#">
+          <img class="microsoft" src="http://placehold.it/150x100" width="44" height="41" alt="Microsoft">
+        </a>
+        <p class="page-header__touch">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <section class="about">
+        <div class="about__marketing">
+          <p class="about__slogan">Устали от серости мегаполиса?</p>
+          <p class="about__slogan">Нам есть, что вам предложить!</p>
+        </div>
+        <article class="about__items-wrapper">
+          <div class="about__item">
+            <h3 class="about__title">Поднимает настроение</h4>
+            <p class="about__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="about__item">
+            <h3 class="about__title">Меняет мир вокруг</h4>
+            <p class="about__content">Сделайте снимок и украсьте его смайликом и текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="about__item">
+            <h3 class="about__title">Заводит новых друзей</h4>
+            <p class="about__content">ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+          <div class="about__telephone">
+            <img class="telephone-Iphone" src="http://placehold.it/150x100" width="157" height="320" alt="Iphone screen">
+          </div>
+        </article>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <div class="reviews__wrapper slider__item">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые веши! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper slider">
+          <table class="price__list slider__item">
+            <thead class="price__list-head">
+              <tr>
+                <th class="price__value"></th>
+                <th class="price__value flag">Стандарт
+                  <p>3,99 USD</p>
+                  <img class="price__hit" src="http://placehold.it/150x100" width="74" height="73" alt="хит">
+                </th>
+                <th class="price__value"></th>
+              </tr>
+            </thead>
+            <tbody class="price__list-body">
+              <tr>
+                <td class="price__field price__field-ok">Розовый фильтр
+                  <img class="price__hit" src="http://placehold.it/150x100" width="31" height="21" alt="ok">
+                </td>
+                <td class="price__field price__field-ok">Смайлики
+                  <img class="price__hit" src="http://placehold.it/150x100" width="31" height="21" alt="ok">
+                </td>
+                <td class="price__field price__field-cancel">комментарии
+                  <img class="price__hit" src="http://placehold.it/150x100" width="27" height="26" alt="cancel">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <section class="page-footer__contacts">
+          <h2 class="page-footer__title">Остались вопросы?&nbsp;Свяжитесь с нами!</h2>
+          <div class="page-footer__call-us">
+            <h4 class="page-footer__sub-title">Звоните:</h4>
+            <p class="page-footer__info">+7 (812) 555-66-66</p>
+          </div>
+          <div class="page-footer__write-us">
+            <h4 class="page-footer__sub-title">Пишите:</h4>
+            <a class="page-footer__mail-link" href="#">mail@htmlacademy.ru</a>
+          </div>
+          <div class="page-footer__visit-us">
+            <h4 class="page-footer__sub-title">Приезжайте в гости:</h4>
+            <p class="page-footer__info" href="#">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </section>
+      </div>
+      <section class="page-footer__map">
+        <img class="map" src="http://placehold.it/150x100" width="320" height="645" alt="map">
+      </section>
+    </footer>
+
+
+    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>!-->
 
   </body>
 </html>
