@@ -1,0 +1,22 @@
+.container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

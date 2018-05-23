@@ -2,174 +2,333 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js" async></script>
+    <script src="js/svgxuse.js" async></script>
+
   </head>
+
   <body>
 
-    <header class="page-header">
-      <div class="page-header__index">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="75" height="22" alt="Приложение «PINK»">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a>Главная</a>
+
+    <header class="header-main">
+
+      <div class="header-main__wrapper">
+
+        <div class="header-main__wrap">
+
+          <div class="header-main__panel">
+            <a class="header-main__link">
+              <svg class="header-main__logo header-main__logo--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-mobile"></use></svg>
+              <svg class="header-main__logo header-main__logo--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+              <svg class="header-main__logo header-main__logo--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
+            </a>
+          </div>
+
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link—current">Фотографии</a>
               </li>
-              <li class="site-list__item">
-                <a href="form.html">Конкурс</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
               </li>
-              <li class="site-list__item">
-                <a href="#">HTML ACADEMY</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
               </li>
             </ul>
-          </div>
-        </nav>
+            <button class="main-nav__btn" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+          </nav>
+
+        </div>
       </div>
-      </div>
+
     </header>
-    <main class="page-main">
-      <section class="photo-section">
-        <div class="photo-section__main-wrapper">
-          <p class="photo-section__slogan slogan-wrapper">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+    <main class="content-main">
+
+      <div class="content-main__header">
+        <div class="container">
+          <h1 class="content-main__title">Фотографии пользователей</h1>
         </div>
-        <section class="user-photo user-photo-day">
-          <div class="user-photo__view-day-wrapper">
-            <p class="user-photo__view-day">Панорама дня</p>
-          </div>
-          <img class="user-photo__image user-photo__img" src="http://placehold.it/150x100" width="320" height="137" alt="photo">
-          <div class="user-photo__caption">
-            <h4 class="user-photo__title">Анна <span>(5 минут назад)</span> </h4>
-            <p class="user-photo__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <div class="user-photo__footer">
-              Нравится:
-              <span class="user-photo-like">215</span>
-            </div>
-          </div>
-        </section>
-        <div class="photo-section__wrapper-inner">
-          <section class="user-photo">
-            <img class="user-photo__image user-photo__img" src="http://placehold.it/150x100" width="280" height="180" alt="photo">
-            <div class="user-photo__caption">
-              <h4 class="user-photo__title">Левон <span>(5 часов назад)</span></h4>
-              <p class="user-photo__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="user-photo__footer">
-                Нравится:
-                <span class="user-photo-like">356</span>
+      </div>
+
+      <section class="posts">
+
+        <h2 class="visually-hidden">Посты пользователей.</h2>
+
+        <div class="container">
+          <p class="posts__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+
+        <div class="panorama">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="panorama__img" src="../img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография местности с высоты">
+          </picture>
+          <div class="panorama__desc">панорама дня</div>
+          <div class="container">
+            <div class="panorama__wrap">
+              <div class="panorama__meta">
+                <span class="panorama__author">Анна</span>
+                <span class="panorama__load-time">(5 минут назад)</span>
+              </div>
+              <p class="panorama__textual">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <div class="panorama__likes">
+                <button class="panorama__btn-likes" type="button">
+                  <span class="visually-hidden">Сердечко</span>
+                </button>
+                <span class="panorama__wording">Нравится:</span>
+                <span class="panorama__number-likes">215</span>
               </div>
             </div>
-          </section>
-          <section class="user-photo">
-            <img class="user-photo__image user-photo__img" src="http://placehold.it/150x100" width="280" height="180" alt="photo">
-              <div class="user-photo__caption">
-                <h4 class="user-photo__title">Антон <span>(15 часов назад)</span></h4>
-                <p class="user-photo__content">Соседи будут рады!</p>
-                <div class="user-photo__footer">
-                  Нравится:
-                  <span class="user-photo-like">666</span>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="wrapper">
+
+            <div class="post">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотосъемка машины">
+              </picture>
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Левон</span>
+                  <span class="post__load-time">(5 часов назад)</span>
+                </div>
+                <p class="post__textual">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">356</span>
                 </div>
               </div>
-          </section>
-          <section class="user-photo">
-            <img class="user-photo__image user-photo__img" src="http://placehold.it/150x100" width="280" height="180" alt="photo">
-              <div class="user-photo__caption">
-                <h4 class="user-photo__title"><Борис <span>(20 часов назад)</span></h4>
-                <p class="user-photo__content">Здесь могла быть ваша цитата о высоком и вечном</p>
-                <div class="user-photo__footer">
-                  Нравится:
-                  <span class="user-photo-like">215</span>
+            </div>
+
+            <div class="post">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="post__img"  src="../img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Ударная установка">
+              </picture>
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Антон</span>
+                  <span class="post__load-time">(12 часов назад)</span>
+                </div>
+                <p class="post__textual">Соседи будут рады!</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">666</span>
                 </div>
               </div>
-          </section>
-          <section class="user-photo">
-            <img class="user-photo__image user-photo__img" src="http://placehold.it/150x100" width="280" height="180" alt="photo">
-              <div class="user-photo__caption">
-                <h4 class="user-photo__title">Сергей <span>(25 часов назад)</span></h4>
-                <p class="user-photo__content">Самая кубанская в мире!</p>
-                <div class="user-photo__footer">
-                  Нравится:
-                  <span class="user-photo-like">4</span>
+            </div>
+
+            <div class="post">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-window-mobile@1x.jpg"  srcset="img/photo-window-mobile@2x.jpg 2x" alt="Затейливая архитектура здания">
+              </picture>
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Борис</span>
+                  <span class="post__load-time">(20 часов назад)</span>
+                </div>
+                <p class="post__textual">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">215</span>
                 </div>
               </div>
-          </section>
-          <section class="user-photo">
-            <img class="user-photo__image user-photo__img" src="http://placehold.it/150x100" width="280" height="180" alt="photo">
-              <div class="user-photo__caption">
-                <h4 class="user-photo__title">Максим <span>(40 часов назад)</span></h4>
-                <p class="user-photo__content">Где снег то?</p>
-                <div class="user-photo__footer">
-                  Нравится:
-                  <span class="user-photo-like">150</span>
+            </div>
+
+            <div class="post">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка на кубани">
+              </picture>
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Сергей</span>
+                  <span class="post__load-time">(25 часов назад)</span>
+                </div>
+                <p class="post__textual">Самая кубанская в мире!</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">4</span>
                 </div>
               </div>
-          </section>
-          <section class="user-photo">
-            <img class="user-photo__image user-photo__img" src="http://placehold.it/150x100" width="280" height="180" alt="photo">
-              <div class="user-photo__caption">
-                <h4 class="user-photo__title">Надежда <span>(40 часов назад)</span></h4>
-                <p class="user-photo__content">Всем GM и взаимные лайки!</p>
-                <div class="user-photo__footer">
-                  Нравится:
-                  <span class="user-photo-like">2560</span>
+            </div>
+
+            <div class="post">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Вид с вершины горы">
+              </picture>
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Максим</span>
+                  <span class="post__load-time">(40 часов назад)</span>
+                </div>
+                <p class="post__textual">Где снег-то?</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">150</span>
                 </div>
               </div>
+            </div>
+
+            <div class="post">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-wing-mobile@1x.jpg"  srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолета в воздухе">
+              </picture>
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Надежда</span>
+                  <span class="post__load-time">(45 часов назад)</span>
+                </div>
+                <p class="post__textual">Всем GM и взаимные лайки!</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">2560</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
-      <section class="photo-load">
-        <div class="photo-load__wrapper">
-          <div class="photo-load__content-wrapper photo-load__content">
-            Затмите их всех!<br>
-            Выкладывайте все, что накопилось в телефоне!
-          </div>
-          <form class="photo-load__form" action="echo" method="POST">
-            <div class="photo-load__form-wrapper">
-              <img class="photo-load__img" src="http://placehold.it/150x100" width="280" height="374" alt="photo">
-              <div class="photo-load__tools photo-load__tools-list">
-                <div class="photo-load__tool">
-                  <img class="" src="" width="49" height="48">
-                </div>
-                <div class="photo-load__tool">
-                  <img class="" src="" width="49" height="48">
-                </div>
-                <div class="photo-load__tool">
-                  <img class="" src="" width="32" height="32">
-                </div>
-                <div class="controls">
-                  <div class="controls_scale">
-                    <div class="controls__bar"></div>
-                    <div class="controls__toggle"></div>
+
+      <section class="upload">
+
+        <h2 class="visually-hidden">Загрузить фотографию</h2>
+
+        <div class="container">
+          <p class="upload__text">Затмите их всех!</p>
+          <p class="upload__text">Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+          <div class="upload__content">
+            <div class="container">
+              <div class="upload__wrap">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                  <img class="upload__img" src="../img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Заснеженная трасса">
+                </picture>
+
+                <form action="#" class="upload__form">
+                  <!-- "управляющие элементы не меняют положение при разных брейкпойнтах, т. к. сделаны на range" -->
+                  <div class="upload__tools">
+
+                    <button class="upload__tool  upload__tool--size" type="button">
+                      <svg class="upload__icon upload__icon--size" width="48" height="48"><use xlink:href="img/sprite.svg#icon-crop"></use></svg>
+                    </button>
+                    <div class="upload__scale">
+                      <input class="upload__input" type="range" min="1" max="15" step="1" value="12">
+                    </div>
+
+                    <button class="upload__tool  upload__tool--fill" type="button">
+                      <svg class="upload__icon upload__icon--fill" width="48" height="48"><use xlink:href="img/sprite.svg#icon-fill"></use></svg>
+                    </button>
+                    <div class="upload__scale">
+                      <input class="upload__input" type="range" min="1" max="15" step="1" value="3">
+                    </div>
+
+                    <button class="upload__tool  upload__tool--contrast" type="button">
+                      <svg class="upload__icon upload__icon--contrast" width="32" height="32"><use xlink:href="img/sprite.svg#icon-contrast"></use></svg>
+                    </button>
+                    <div class="upload__scale">
+                      <input class="upload__input" type="range" min="1" max="15" step="1" value="13">
+                    </div>
                   </div>
-                </div>
+
+                  <button class="upload__btn  upload__btn--post" type="submit">Запостить</button>
+                  <button class="upload__btn  upload__btn--cancel" type="reset">Отмена</button>
+
+                </form>
               </div>
-              <button class="photo-load__submit" type="submit" value="">Запостить</button>
-              <button class="photo-load__reset" type="reset" value="">Отмена</button>
             </div>
-          </form>
-        </div>
+          </div>
+
       </section>
+
     </main>
 
-    <footer class="page-footer">
-      <section class="page-footer__copyright">
-        <a class="logo-copyright" href="index.html">
-          <img class="logo-copyright__mobile" src="http://placehold.it/150x100" width="147" height="40">
-        </a>
-        <div class="social-links">
-          <a class="social-links social-links__item" href="#">Tвиттер</a>
-          <a class="social-links social-links__item" href="#">Фейсбук</a>
-          <a class="social-links social-links__item" href="#">Ютуб</a>
-        </div>
-        <div class="page-footer__developer">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано
-            <img class="logo-htmlacademy" src="http://placehold.it/150x100" width="27" height="34">
+
+    <footer class="footer-main footer-main--photo">
+
+      <div class="container">
+
+        <div class="footer-main__wrap">
+
+          <a class="footer-main__logo footer-main__logo--photo" href="index.html">
+            <svg class="footer-main__logo footer-main__logo--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+            <svg class="footer-main__logo footer-main__logo--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
+            <span class="visually-hidden">PINK</span>
           </a>
+
+          <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="#">
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--f" href="#">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--yt" href="#">
+                <span class="visually-hidden">youtube</span>
+              </a>
+            </li>
+          </ul>
+          </div>
+
+          <div class="copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__img" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+            <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
+          </a>
+          </div>
         </div>
-      </section>
+      </div>
     </footer>
 
   </body>
