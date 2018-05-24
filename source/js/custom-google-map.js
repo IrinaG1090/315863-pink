@@ -1,4 +1,3 @@
-
 google.maps.event.addDomListener(window, 'load', init);
 
   function init() {
