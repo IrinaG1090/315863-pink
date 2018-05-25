@@ -1,0 +1,142 @@
+.main-nav {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media (min-width: 960px) {
+    display: block;
+    width: 700px;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top: 21px;
+  }
+}
+
+.main-nav__item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  min-height: 14px;
+  background-color: $color-text;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
+
+  &:nth-child(1) {
+    border-top: 1px solid #485461;
+  }
+
+  @media (min-width: 960px) {
+    width: 150px;
+    border: none;
+    background-color: transparent;
+
+    &:nth-child(1) {
+      border-top: none;
+    }
+  }
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white-color;
+
+  &:nth-child(1) .main-nav__link {
+    padding-bottom: 15px;
+  }
+
+  &:hover {
+    color: $red-text;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
+  @media (min-width: 1200px) {
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 17px;
+
+    &:nth-child(4) .main-nav__link {
+      margin-left: 18px;
+    }
+
+    &:nth-child(1) {
+      border-top: none;
+    }
+
+    &:hover {
+      color: #b32b54;
+    }
+
+    &:active {
+      color: #82888e;
+    }
+  }
+}
+
+.main-nav__btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 16px;
+  left: 264px;
+  font-size: 0;
+  background: $color-text;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: 660px) {
+    top: 40px;
+    left: 605px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.main-nav__btn::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 30px;
+  height: 4px;
+  background-color: $white-color;
+  transform: rotate(45deg);
+}
+
+.main-nav__btn::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 30px;
+  height: 4px;
+  background-color: $white-color;
+  transform: rotate(-45deg);
+}
+
+.main-nav__btn:hover::before,
+.main-nav__btn:hover::after {
+  background-color: $red-text;
+}
+
+.main-nav__btn:active::before,
+.main-nav__btn:active::after {
+  background-color: rgba(210, 40, 86, 0.3);
+}
