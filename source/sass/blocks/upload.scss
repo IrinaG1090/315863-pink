@@ -2,11 +2,7 @@
   @media (min-width: 660px) {
     padding-bottom: 17px;
   }
-
-  @media (min-width: 960px) {
-
   }
-}
 
 .upload__text {
   margin: 0;
@@ -50,10 +46,10 @@
     margin-left: 80px;
     }
 }
+
 .upload__content {
   padding-top: 18px;
   background-color: $base-color;
-
 }
 
 .upload__wrap {
@@ -190,7 +186,6 @@
 
     &--size {
       margin-top: -3px;
-
     }
 
     &--fill {
@@ -268,7 +263,7 @@
     left: -40px;
     width: 320px;
     height: 1px;
-    border-bottom: 1.5px solid #dddfe0;;
+    border-bottom: 1.5px solid #dddfe0;
     z-index: 20;
   }
 
@@ -317,17 +312,16 @@
       margin-top: 13px;
     }
   }
-
 }
 
 .upload__input {
-  -webkit-appearance: none;
+  - webkit-appearance: none;
   width: 240px;
   height: 2px;
   background-color: #283645;
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    - webkit-appearance: none;
     width: 14px;
     height: 14px;
     background-color: $base-color;
@@ -347,6 +341,4 @@
   @media (min-width: 960px) {
     width: 287px;
   }
-
-
 }

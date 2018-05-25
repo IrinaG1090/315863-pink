@@ -42,11 +42,8 @@
     &:nth-child(1) {
       border-top: none;
     }
-
   }
 }
-
-
 
 .main-nav__link {
   display: block;
@@ -122,6 +119,7 @@
     background-color: $white-color;
     transform: rotate(45deg);
 }
+
 .main-nav__btn::after {
     content: "";
     position: absolute;

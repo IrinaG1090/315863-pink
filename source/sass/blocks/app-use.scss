@@ -68,7 +68,6 @@
     &::before {
       left: 49px;
     }
-
   }
 
   @media (min-width: 940px) {
@@ -78,7 +77,6 @@
       left: 65px;
     }
   }
-
 }
 
 .app-use__input:hover + .app-use__label::before {

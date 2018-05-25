@@ -36,7 +36,6 @@
   flex-wrap: wrap;
   width: 87%;
   margin-top: 25px;
-
 }
 
 .prices__name,
@@ -55,7 +54,6 @@
   color: $color-text;
   border-left: 2px solid $color-border;
   border-bottom: 2px solid $color-border;
-
 }
 
 .prices__name--header,
@@ -66,7 +64,6 @@
   color: $white-color;
   text-align: center;
   border-left: 2px solid $color-border;
-
 }
 
 .prices__name--header {
@@ -99,17 +96,15 @@
   width: 65px;
   height: 60px;
   margin-left: auto;
-
 }
 
 .prices__available--yes {
-  background: $white-color url(../img/icon-table-yes.svg) no-repeat;
+  background: $white-color url("../img/icon-table-yes.svg") no-repeat;
   background-position: center center;
-
 }
 
 .prices__available--no {
-  background: $white-color url(../img/icon-no.svg) no-repeat;
+  background: $white-color url("../img/icon-no.svg") no-repeat;
   background-position: center center;
 }
 
@@ -146,7 +141,6 @@
   height: 12px;
   background-color: $base-color;
   border: 3px solid $color-text;
-
 }
 
 .prices__input--2:checked ~ .prices__table .prices__content {
@@ -173,7 +167,6 @@
 }
 
 @media (min-width: 660px) {
-
   .prices__container {
     width: 620px;
     margin: 0 auto;
@@ -224,7 +217,6 @@
   .prices__list:nth-child(2) .prices__name--header,
   .prices__list:nth-child(3) .prices__name--header {
     display: flex;
-    margin-left: 0;
     margin-left: -2px;
     padding-left: 35px;
   }
@@ -260,7 +252,6 @@
     flex-basis: 155px;
     width: 155px;
     margin-left: 153px;
-
   }
 
   .prices__name--header {
@@ -285,14 +276,11 @@
 
   .prices__name--collumn {
     border-top: 2px solid $color-border;
-
   }
 
   .prices__name--header {
     border-right: none;
   }
-
-
 }
 
 @media (min-width: 960px) {
@@ -304,6 +292,7 @@
       height: 100px;
     }
   }
+}
 
   .prices__container {
     width: 940px;
@@ -334,7 +323,7 @@
 
   .prices__name--header,
   .prices__desk--header {
-    flex-basis:235px;
+    flex-basis: 235px;
     width: 235px;
     margin-left: 235px;
   }
@@ -377,5 +366,4 @@
     padding-top: 13px;
     padding-left: 20px;
   }
-
 }

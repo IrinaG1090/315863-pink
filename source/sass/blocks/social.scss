@@ -9,9 +9,11 @@
     margin-left: 43px;
   }
 }
+
 .social__list {
   width: 200px;
   height: 80px;
+
   @include list-reset;
   display: flex;
   flex-shrink: 0;
