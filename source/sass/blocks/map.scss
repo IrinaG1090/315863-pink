@@ -1,6 +1,7 @@
-#map {
+.map {
   width: 100%;
   height: 200px;
+  position: relative;
 
   @media (min-width: 660px) {
     height: 374px;
@@ -11,10 +12,6 @@
     height: 503px;
     margin-top: 21px;
   }
-}
-
-.map {
-  position: relative;
 
   &::before {
     content: "";

@@ -70,11 +70,12 @@
     height: 39px;
     border: 2px solid $color-border;
     border-radius: 2px;
-
   }
+
   &:hover::before {
     border: 2px solid $color-text;
 }
+
   @media (min-width: 660px) {
     width: 100%;
     margin-top: 48px;
@@ -93,6 +94,7 @@
       width: 313px;
       padding-left: 113px;
     }
+
     &:nth-of-type(2) {
       order: 4;
       margin: 0;
