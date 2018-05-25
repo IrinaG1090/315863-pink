@@ -110,17 +110,17 @@
       margin-bottom: 49px;
     }
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 30px;
-        right: 0;
-        width: 62px;
-        height: 60px;
-        background-color: $color-border;
-        border-radius: 2px;
-        z-index: -1;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 62px;
+      height: 60px;
+      background-color: $color-border;
+      border-radius: 2px;
+      z-index: -1;
+    }
   }
 
   @media (min-width: 960px) {

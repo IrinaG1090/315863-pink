@@ -110,25 +110,25 @@
 }
 
 .main-nav__btn::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 0;
-    width: 30px;
-    height: 4px;
-    background-color: $white-color;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 30px;
+  height: 4px;
+  background-color: $white-color;
+  transform: rotate(45deg);
 }
 
 .main-nav__btn::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 0;
-    width: 30px;
-    height: 4px;
-    background-color: $white-color;
-    transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 30px;
+  height: 4px;
+  background-color: $white-color;
+  transform: rotate(-45deg);
 }
 
 .main-nav__btn:hover::before,

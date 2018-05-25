@@ -26,7 +26,7 @@
 }
 
 .header-main__wrap {
-    @media (min-width: 960px) {
+  @media (min-width: 960px) {
     width: 940px;
     margin: 0 auto;
     display: flex;
@@ -44,7 +44,7 @@
   @media (min-width: 660px) {
     position: relative;
     padding-top: 27px;
-    }
+  }
 
   @media (min-width: 960px) {
     margin-left: 0;

@@ -1,9 +1,9 @@
-  .reviews {
+.reviews {
   position: relative;
   padding-bottom: 50px;
-  }
+}
 
-  .reviews__list {
+.reviews__list {
   height: 300px;
 
   @include list-reset;
